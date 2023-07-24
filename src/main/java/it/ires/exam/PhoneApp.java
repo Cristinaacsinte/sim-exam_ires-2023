@@ -12,7 +12,12 @@ public class PhoneApp {
         Telefonata telefonata = new Telefonata( "33334455");
         Telefonata telefonata2 = new Telefonata( "33334458");
         Smarthphone smarthphone=new Smarthphone();
-        System.out.println(smarthphone.doTelefonata(telefonata));
+
+        System.out.println(smarthphone.possoTelefonare(sim));
+        System.out.println(smarthphone.doTelefonata(telefonata,sim));
+        System.out.println(smarthphone.possoTelefonare(sim));
+
+
         //System.out.println(smarthphone.doTelefonata(telefonata2));
         System.out.println(smarthphone.closeTelefonata(telefonata));
         System.out.println(smarthphone.closeTelefonata(telefonata2));
